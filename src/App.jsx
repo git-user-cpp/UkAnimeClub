@@ -1,4 +1,6 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { HomeScreen, AboutUs, NotFound, Movies, ContactUs } from './Screens'
 
 /*   
 Copyright 2023 Andrew Kushyk
@@ -18,9 +20,13 @@ limitations under the License.
 
 const App = () => {
   return (
-    <div className="h-header bg-main w-full">
-      <h1 className="text-h1 text-subMain underline">Hello world</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomeScreen/>} />
+      <Route path='/anime' element={<Movies/>} />
+      <Route path='/contact_us' element={<ContactUs/>} />
+      <Route path="/about_us" element={<AboutUs/>} />
+      <Route path="*" element={<NotFound/>} />
+    </Routes>
   )
 }
 
