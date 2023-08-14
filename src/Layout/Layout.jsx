@@ -1,4 +1,6 @@
 import React from 'react'
+import Navbar from './Navbar/Navbar'
+import Footer from './Footer/Footer'
 
 /*   
 Copyright 2023 Andrew Kushyk
@@ -16,10 +18,16 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const Movies = () => {
+const Layout = ({children}) => {
   return (
-    <div>Anime</div>
+    <>
+      <div className="bg-main text-white">
+        <Navbar/>
+        {children}
+        <Footer/>
+      </div>
+    </>
   )
 }
 
-export default Movies
+export default Layout

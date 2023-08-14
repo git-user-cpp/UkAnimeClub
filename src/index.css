@@ -35,18 +35,18 @@ input:focus, textarea:focus, select:focus {
 }
 
 .hovered:hover .hoveres {
-    @apply flex_col;
+    @apply flex-colo;
 }
 
-.flex_col {
+.flex-colo {
     @apply flex flex-col justify-center items-center;
 }
 
-.flex_row {
+.flex-rows {
     @apply flex flex-row justify-center items-center;
 }
 
-.flex_btn {
+.flex-btn {
     @apply flex justify-between items-center;
 }
 

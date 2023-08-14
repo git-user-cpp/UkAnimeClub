@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../Layout/Layout.jsx'
 
 /*   
 Copyright 2023 Andrew Kushyk
@@ -18,7 +19,9 @@ limitations under the License.
 
 const HomeScreen = () => {
   return (
-    <div>HomeScreen</div>
+    <Layout>
+      <div>HomeScreen</div>
+    </Layout>
   )
 }
 
