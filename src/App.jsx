@@ -19,7 +19,8 @@ limitations under the License.
 const App = () => {
   return (
     <div className="h-header bg-main w-full">
-      <h1 className="text-h1 text-subMain underline">Hello world</h1>
+      <h1 className="text-h1 text-star font-bold underline">Hello world</h1>
+      <p className=' text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, molestias!</p>
     </div>
   )
 }
