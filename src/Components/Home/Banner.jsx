@@ -1,6 +1,5 @@
 import React from 'react'
-import Layout from '../Layout/Layout.jsx'
-import { Banner, PopularMovies, Promos, TopRated } from '../Components'
+import { Swiper, SwiperSlide } from 'swiper'
 
 /*   
 Copyright 2023 Andrew Kushyk
@@ -18,17 +17,23 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const HomeScreen = () => {
+const Banner = () => {
   return (
-    <Layout>
-      <div className='container mx-auto min-h-screen px-2 mb-6'>
-        <Banner/>
-        <PopularMovies/>
-        <Promos/>
-        <TopRated/>
-      </div>
-    </Layout>
+    <div className="relative w-full">
+      <Swiper
+        direction='vertical'
+        spaceBetween={0}
+        slidesPerView={1}
+        loop={true}
+        speed={1000}
+        modules={[Autoplay]}
+        autoplay={{delay: 4000, disableOnInteraction: false}}
+        className='w-full xl:h-96 bg-dry lg:h-64 h-48'
+      >
+
+      </Swiper>
+    </div>
   )
 }
 
-export default HomeScreen
+export default Banner
