@@ -1,6 +1,4 @@
 import React from 'react'
-import Layout from '../Layout/Layout.jsx'
-import { Banner, PopularMovies, Promos, TopRated } from '../Components'
 
 /*   
 Copyright 2023 Andrew Kushyk
@@ -18,17 +16,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const HomeScreen = () => {
+const Promos = () => {
   return (
-    <Layout>
-      <div className='container mx-auto min-h-screen px-2 mb-6'>
-        <Banner/>
-        <PopularMovies/>
-        <Promos/>
-        <TopRated/>
-      </div>
-    </Layout>
+    <div>Promos</div>
   )
 }
 
-export default HomeScreen
+export default Promos
