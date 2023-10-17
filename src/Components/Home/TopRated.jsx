@@ -1,4 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Titles from './Titles'
+import {BsBookmarkStarFill} from 'react-icons/bs'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import {Navigation, Autoplay} from 'swiper/modules'
+import {Movies} from '../../Data/MoviesData'
 
 /*   
 Copyright 2023 Andrew Kushyk
@@ -17,8 +22,38 @@ limitations under the License.
 */
 
 const TopRated = () => {
+  const [nextEl, setNextEl] = useState(null);
+  const [prevEl, setPrevEl] = useState(null);
+
   return (
-    <div>TopRated</div>
+    <div className='my-16'>
+      <Titles title='Top Rated' Icon={BsBookmarkStarFill}/>
+      <div className='mt-10'>
+        <Swiper 
+          navigation={{nextEl, prevEl}}
+          slidesPerView={2} 
+          spaceBetween={40} 
+          autoplay={{delay: 1000, disableOnInteraction: false}} 
+          speed={1000} 
+          loop={true} 
+          modules={[Navigation, Autoplay]}
+        >
+          {
+            Movies.map((movie, index) => (
+              <SwiperSlide key={index}>
+                <div className='p-4 border border-border bg-dry rounded-lg overflow-hidden'>
+                  <img 
+                    src={movie?.image} 
+                    alt={movie?.image} 
+                    className='w-full h-80 object-cover rounded-lg'
+                  />
+                </div>
+              </SwiperSlide>
+            ))
+          }
+        </Swiper>
+      </div>
+    </div>
   )
 }
 
