@@ -23,6 +23,7 @@ export const Movies = [
         category: "action",
         year: 2018,
         time: "20 minutes",
+        rating: 4.1,
     },
     {
         image: Anime2,
@@ -30,6 +31,7 @@ export const Movies = [
         category: "action",
         year: 2018,
         time: "25 minutes",
+        rating: 5,
     },
     {
         image: Anime3,
@@ -37,6 +39,7 @@ export const Movies = [
         category: "action",
         year: 2018,
         time: "20 minutes",
+        rating: 1.6,
     },
     {
         image: Anime4,
@@ -44,5 +47,6 @@ export const Movies = [
         category: "action",
         year: 2018,
         time: "25 minutes",
+        rating: 4.8,
     }
 ]

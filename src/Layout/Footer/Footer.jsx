@@ -25,7 +25,7 @@ const Footer = () => {
       links: [
         {
           name: "Home",
-          link: "/",
+          link: "/UkAnimeClub",
         },
         {
           name: "About Us",
