@@ -21,7 +21,7 @@ limitations under the License.
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomeScreen/>} />
+      <Route path="/UkAnimeClub" element={<HomeScreen/>} />
       <Route path='/anime' element={<Movies/>} />
       <Route path='/contact_us' element={<ContactUs/>} />
       <Route path="/about_us" element={<AboutUs/>} />
