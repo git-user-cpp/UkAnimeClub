@@ -24,7 +24,7 @@ const Promos = () => {
       <div className='lg:grid lg:grid-cols-2 lg:gap-10 items-center'>
         <div className='flex lg:gap-10 gap-6 flex-col'>
           <h1 className='xl:text-3x1 text-xl capitalize font-medium leading-relaxed'>
-            Download Your Movies & Watch Offline <br/> Enjoy On Your Mobile
+            Download Anime & Watch Offline <br/> Enjoy On Your Mobile
           </h1>
           <p className=' text-text text-sm xl:text-base leading-6 xl:leading-8'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, doloremque!
