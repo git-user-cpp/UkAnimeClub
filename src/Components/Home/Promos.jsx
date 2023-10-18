@@ -20,7 +20,7 @@ limitations under the License.
 
 const Promos = () => {
   return (
-    <div className='my-20 py-10 md:px-20 px-8 bg-dry rounded-lg'>
+    <div className='my-20 py-10 md:px-20 px-8 bg-dry'>
       <div className='lg:grid lg:grid-cols-2 lg:gap-10 items-center'>
         <div className='flex lg:gap-10 gap-6 flex-col'>
           <h1 className='xl:text-3x1 text-xl capitalize font-medium leading-relaxed'>
@@ -42,7 +42,7 @@ const Promos = () => {
           </div>
         </div>
         <div>
-          <img src={Mobile} alt="Mobile app" className='w-full object-contain rounded-lg' />
+          <img src={Mobile} alt="Mobile app" className='w-full object-contain' />
         </div>
       </div>
     </div>

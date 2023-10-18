@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Logo } from '../../Assets'
 
 /*   
 Copyright 2023 Andrew Kushyk
@@ -112,7 +111,8 @@ const Footer = () => {
 
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
             <Link to="/">
-              {<img src={Logo} alt="logotype" className=' w-48'/>}
+              Home Logo
+              {/*<img src="" alt="logo" className=' w-2/4 object-contain h-12' />*/}
             </Link>
             <p className=' leading-7 text-sm text-border mt-3'>
               Lorem ipsum dolor sit amet consectetur<br/> adipisicing elit. Officiis, illo.
